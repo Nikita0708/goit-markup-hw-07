@@ -76,8 +76,7 @@ ol {
   line-height: 1.19;
   margin-right: 93px;
 }
-
-.header-logo > span {
+.header-logo span {
   color: var(--hover-color);
 }
 
@@ -102,16 +101,19 @@ ol {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+.header-link:hover, .header-link:focus {
+  color: var(--hover-color);
+}
 
 .header-item:not(:last-child) {
   margin-right: 50px;
 }
 
-li > .port {
+li .port {
   color: var(--hover-color);
 }
 
-li > .studio {
+li .studio {
   color: var(--hover-color);
 }
 
@@ -145,17 +147,6 @@ li > .studio {
   border-radius: 2px;
 }
 
-.header-link:hover,
-.header-link:focus {
-  color: var(--hover-color);
-}
-
-.link-contacts:hover,
-.link-contacts:focus {
-  color: var(--hover-color);
-  fill: var(--hover-color);
-}
-
 .header-contacts {
   display: flex;
   align-items: center;
@@ -179,6 +170,10 @@ li > .studio {
   display: flex;
   align-items: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link-contacts:hover, .link-contacts:focus {
+  color: var(--hover-color);
+  fill: var(--hover-color);
 }
 
 .hero {
@@ -227,8 +222,7 @@ li > .studio {
   cursor: pointer;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.hero-btn:hover {
+.hero-btn:hover, .hero-btn:focus {
   background-color: #188ce8;
 }
 
@@ -372,15 +366,13 @@ li > .studio {
   justify-content: center;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.team__soc-link:hover, .team__soc-link:focus {
+  background-color: var(--hover-color);
+  fill: #ffffff;
+}
 
 .team__soc-item:not(:last-child) {
   margin-right: 10px;
-}
-
-.team__soc-link:hover,
-.team__soc-link:focus {
-  background-color: var(--hover-color);
-  fill: #ffffff;
 }
 
 .clients-title {
@@ -414,7 +406,6 @@ li > .studio {
   justify-content: center;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .clients-link:hover {
   fill: var(--hover-color);
   border: 1px solid var(--hover-color);
@@ -430,7 +421,6 @@ address {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-
 .footer .container {
   display: flex;
   align-items: baseline;
@@ -444,8 +434,7 @@ address {
   font-weight: 700;
   color: var(--white-color);
 }
-
-.footer-logo > span {
+.footer-logo span {
   color: var(--hover-color);
 }
 
@@ -460,14 +449,12 @@ address {
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.footer-link-contacts:hover, .footer-link-contacts:focus {
+  color: var(--hover-color);
+}
 
 .footer-item .footer-map {
   color: var(--white-color);
-}
-
-.footer-link-contacts:hover,
-.footer-link-contacts:focus {
-  color: var(--hover-color);
 }
 
 .footer-connect {
@@ -501,14 +488,12 @@ address {
   fill: #ffffff;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.footer-link:hover, .footer-link:focus {
+  background-color: var(--hover-color);
+}
 
 .footer-icons-item:not(:last-child) {
   margin-right: 10px;
-}
-
-.footer-link:hover,
-.footer-link:focus {
-  background-color: var(--hover-color);
 }
 
 .form-title {
@@ -539,11 +524,9 @@ address {
   color: rgba(255, 255, 255, 0.6);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .footer-input:focus {
   border-color: var(--hover-color);
 }
-
 .footer-input:hover {
   border: 1px solid var(--hover-color);
 }
@@ -566,8 +549,7 @@ address {
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.footer-submit:hover {
+.footer-submit:hover, .footer-submit:focus {
   background-color: #188ce8;
 }
 
@@ -585,10 +567,6 @@ address {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0);
-}
-
 .modal {
   width: 528px;
   min-height: 581px;
@@ -600,6 +578,9 @@ address {
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 40px;
+}
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0);
 }
 
 .modal-close-btn {
@@ -617,9 +598,7 @@ address {
   cursor: pointer;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal-close-btn:hover,
-.modal-close-btn:focus {
+.modal-close-btn:hover, .modal-close-btn:focus {
   fill: var(--hover-color);
 }
 
@@ -656,7 +635,6 @@ address {
   fill: var(--default-color);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .modal-input:focus {
   border-color: var(--hover-color);
 }
@@ -694,7 +672,6 @@ address {
   outline: none;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .modal-text:focus {
   border-color: var(--hover-color);
 }
@@ -723,9 +700,7 @@ address {
   color: #ffffff;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal-submit:hover,
-.modal-submit:focus {
+.modal-submit:hover, .modal-submit:focus {
   background-color: #1472bf;
 }
 
@@ -802,22 +777,19 @@ address {
   padding: 6px 22px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.portfolio-item-btn:hover, .portfolio-item-btn:focus {
+  background-color: var(--hover-color);
+  color: var(--white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 
 .portfolio-item:not(:last-child) {
   margin-right: 8px;
 }
 
-li > .all {
+li .all {
   color: var(--white-color);
   background-color: var(--hover-color);
-}
-
-.portfolio-item-btn:hover,
-.portfolio-item-btn:focus,
-.portfolio-item-btn:active {
-  background-color: var(--hover-color);
-  color: var(--white-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .project-item {
@@ -833,9 +805,7 @@ li > .all {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.project-item-link:hover,
-.project-item-link:focus {
+.project-item-link:hover, .project-item-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 

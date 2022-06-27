@@ -8,9 +8,9 @@
   font-weight: 700;
   line-height: 1.19;
   margin-right: 93px;
-}
-.header-logo > span {
-  color: var(--hover-color);
+  span {
+    color: var(--hover-color);
+  }
 }
 .header-nav {
   display: flex;
@@ -30,15 +30,19 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding-top: 32px;
   padding-bottom: 32px;
+  &:hover,
+  &:focus {
+    color: var(--hover-color);
+  }
 }
 .header-item:not(:last-child) {
   margin-right: 50px;
 }
-li > .port {
+li .port {
   color: var(--hover-color);
 }
 
-li > .studio {
+li .studio {
   color: var(--hover-color);
 }
 .studio {
@@ -67,15 +71,6 @@ li > .studio {
   background: #2196f3;
   border-radius: 2px;
 }
-.header-link:hover,
-.header-link:focus {
-  color: var(--hover-color);
-}
-.link-contacts:hover,
-.link-contacts:focus {
-  color: var(--hover-color);
-  fill: var(--hover-color);
-}
 .header-contacts {
   display: flex;
   align-items: center;
@@ -96,4 +91,9 @@ li > .studio {
   display: flex;
   align-items: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--hover-color);
+    fill: var(--hover-color);
+  }
 }
